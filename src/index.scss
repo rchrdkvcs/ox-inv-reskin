@@ -138,20 +138,22 @@ button:active {
 }
 
 .inventory-control {
-  display: none;
+  display: block;
+  width: 100%;
 
   .inventory-control-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    gap: 16px;
   }
 
   .inventory-control-input {
     transition: 200ms;
-    padding: 16px 8px;
-    border-radius: 2.5%;
+    padding: 12px;
+    border-radius: 12px;
     font-family: $mainFont;
     font-size: 16px;
     text-align: center;
@@ -159,22 +161,28 @@ button:active {
     border: none;
     color: #fff;
     background-color: $secondaryColor;
+    width: 100%;
+    font-weight: 500;
+
     &:focus-within {
       background-color: $secondaryColorDark;
     }
   }
 
   .inventory-control-button {
-    font-size: 14px;
+    width: 100%;
+    font-size: 16px;
     color: #fff;
     background-color: $secondaryColor;
     transition: 200ms;
-    padding: 12px 8px;
-    border-radius: 2.5%;
+    padding: 12px;
+    border-radius: 12px;
     border: none;
     font-family: $mainFont;
     width: 100%;
     font-weight: 500;
+    cursor: pointer;
+
     &:hover {
       background-color: $secondaryColorDark;
     }
